@@ -1,0 +1,23 @@
+.home {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.home .all-movies h2 {
+  margin-top: -1em;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-left: 10px;
+}
+.home .all-movies h2 > span {
+  color: #007aff;
+  font-size: 3em;
+}
+.home .all-movies .movies {
+  margin-top: -1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

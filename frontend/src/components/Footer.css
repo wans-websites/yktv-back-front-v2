@@ -1,0 +1,40 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  background-color: black;
+  color: gray;
+  z-index: 2;
+}
+.footer div {
+  cursor: pointer;
+}
+.footer div:hover {
+  color: #fff;
+}
+
+.footer .logo-footer {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .logo-footer p {
+  margin: 0;
+}
+.footer .social-platforms {
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer img {
+  width: 40px;
+}

@@ -1,0 +1,14 @@
+.all-show-movies {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.all-show-movies .all-movies {
+  margin-top: 10px;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

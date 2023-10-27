@@ -1,0 +1,190 @@
+.profile {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.profile .container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile .container .profile-portfolio {
+  height: 70vh;
+  width: 40vw;
+  border: solid 1px #7e7e7e;
+}
+.profile .container .profile-portfolio .profile-cover {
+  height: 50%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.profile .container .profile-portfolio .profile-details {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.profile .container .profile-portfolio .profile-details > div {
+  margin: 10px;
+  border-bottom: solid 1px #7e7e7e;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile .container .profile-portfolio .profile-details .logout-btn {
+  border-bottom: none;
+  background-color: rgb(145, 6, 6);
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  transform: 0.4s;
+}
+.profile .container .profile-portfolio .profile-details .logout-btn:hover {
+  background-color: red;
+}
+.profile .container .account-details {
+  height: 70vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile .account-details .account-plan {
+  width: inherit;
+  border: solid 1px #7e7e7e;
+  height: 35vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+.profile .account-details .account-plan .subscription-plan {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 10px gray;
+  height: 60%;
+  cursor: pointer;
+}
+.profile .account-details .account-plan .subscription-plan:nth-child(2) {
+  box-shadow: 0px 0px 10px #007aef;
+  transform: scale(1.2);
+}
+.profile .account-details .account-overview {
+  width: inherit;
+  border: solid 1px #7e7e7e;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile .account-details .account-overview > div {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #7e7e7e;
+  cursor: pointer;
+}
+
+.warning-modal {
+  position: absolute;
+  width: 50vw;
+  height: 40vh;
+  background-color: #000;
+  z-index: 2000;
+  border: solid 1px #7e7e7e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 30vh;
+  padding: 10px;
+}
+.warning-modal > h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.warning-modal > div {
+  width: 85%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.warning-modal > div:nth-child(2) {
+  background-color: rgb(4, 84, 4);
+}
+.warning-modal > div:nth-child(2):hover {
+  background-color: rgb(13, 182, 13);
+}
+.warning-modal > div:nth-child(3) {
+  background-color: rgb(149, 13, 13);
+}
+.warning-modal > div:nth-child(3):hover {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    height: auto;
+  }
+  .profile .container .profile-portfolio,
+  .profile .container .account-details {
+    margin-bottom: 20px;
+    width: 90vw;
+    height: auto;
+  }
+  .profile .account-details .account-plan {
+    height: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  .profile .account-details .account-plan .subscription-plan {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    height: 30vh;
+    padding: 10px;
+  }
+  .profile .account-details .account-plan .subscription-plan:nth-child(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .profile .account-details .account-overview {
+    height: auto;
+  }
+  .profile .container {
+    flex-direction: column;
+  }
+  .warning-modal {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 468px) {
+  .profile .container .profile-portfolio,
+  .profile .container .account-details {
+    margin-bottom: 40px;
+    width: 100vw;
+  }
+}

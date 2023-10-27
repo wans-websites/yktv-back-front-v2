@@ -1,0 +1,119 @@
+.movie-card {
+  min-width: 300px;
+  max-width: 300px;
+  height: auto;
+  margin: 15px;
+  cursor: pointer;
+  transition: 1s;
+  text-decoration: none;
+  color: #fff;
+  background-color: #181818;
+}
+.movie-card:hover {
+  transform: scale(1.1) translateY(5%);
+  min-width: 350px;
+  max-width: 350px;
+  position: relative;
+  z-index: 20;
+  box-shadow: 0px 0px 20px #007aff;
+
+  border-radius: 10px;
+}
+.movie-card .first-card:hover {
+  transform: scale(1.1) translateX(10%) translateY(-10%);
+  position: relative;
+  z-index: 20;
+}
+.movie-card .last-card:hover {
+  transform: scale(1.1) translateX(-13%) translateY(-10%);
+  position: relative;
+  z-index: 20;
+}
+.movie-card .container {
+  width: inherit;
+  height: inherit;
+}
+.movie-card .thumbnail {
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.movie-card .thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 1s;
+  background: linear-gradient(to top, black, transparent);
+}
+.movie-card .thumbnail:hover::before {
+  border-radius: 10px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  overflow: hidden;
+}
+/* .movie-card .container .movie-info {
+  display: none;
+} */
+
+.movie-card .container .movie-info {
+  display: fl;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  z-index: 1;
+  height: auto;
+}
+.movie-card .container .movie-info > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-card .container .movie-info h4 {
+  margin: 0;
+  margin-bottom: 5px;
+  width: 60%;
+}
+.movie-card .container .movie-info .movie-year {
+  color: #007aff;
+}
+.movie-card .movie-info .duration-likes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+}
+.movie-card .movie-info .duration-likes .duration {
+  display: flex;
+  align-items: center;
+}
+.movie-card .movie-info .duration-likes .clock-icon {
+  color: #007aff;
+  width: 18px;
+}
+.movie-card .movie-info .duration-likes p {
+  margin: 0;
+  margin-left: 10px;
+}
+.movie-card .movie-info .duration-likes .likes {
+  display: flex;
+  align-items: center;
+}
+.movie-card .movie-info .duration-likes .like-icon {
+  color: #007aff;
+  width: 18px;
+}

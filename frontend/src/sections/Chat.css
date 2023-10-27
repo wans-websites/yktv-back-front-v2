@@ -1,0 +1,79 @@
+.chat {
+  margin-top: 5vh;
+  min-height: 40vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 60vh;
+}
+.chat .container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.chat .comment-input-div {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 42%;
+}
+.chat textarea {
+  font-size: 14px;
+  padding: 10px;
+  outline: none;
+  border: solid 1px #7e7e7e;
+  background-color: #000;
+  color: #fff;
+}
+.chat .comment-btn {
+  margin-top: 5px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007aff;
+  cursor: pointer;
+  font-size: 12px;
+}
+.chat .comment {
+  position: sticky;
+  top: 10vh;
+  width: 50%;
+  height: auto;
+  background-color: black;
+  margin-top: 10px;
+  border: solid 1px #7e7e7e;
+  padding: 5px;
+  text-align: center;
+}
+
+@media (max-width: 1192px) {
+  .chat .comment-input-div {
+    width: 60%;
+  }
+}
+@media (max-width: 942px) {
+  .chat .comment-input-div {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .chat .comment-input-div {
+    width: 75%;
+    flex-direction: column;
+  }
+  .chat .comment {
+    position: sticky;
+    top: 0vh;
+    height: auto;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+}

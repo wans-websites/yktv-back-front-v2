@@ -1,0 +1,149 @@
+.show {
+  position: sticky;
+  background-color: black;
+  border: solid 2px #3c3c3c;
+  overflow: hidden;
+}
+
+.show .container {
+  height: inherit;
+  width: inherit;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.show .top-movie {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+.show .show-title {
+  text-transform: uppercase;
+}
+
+.show .top-movie.reverse {
+  flex-direction: row-reverse;
+}
+
+.show .top-movie .inner-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.show .top-movie .thumbnail {
+  height: 100%;
+  width: 40%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 17px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.show .top-movie .thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.show .top-movie .show-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.show .top-movie .show-info .show-description {
+  width: 80%;
+  text-align: center;
+}
+.show .top-movie .show-info .view-all-btn {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: gray;
+}
+.show .top-movie .show-info .view-all-btn:hover {
+  border: none;
+}
+
+.show .top-movie .show-info .view-all-btn .view-all-btn-inner-div {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.8s;
+  background-color: black;
+  border: solid 2px #fff;
+}
+.show .top-movie .show-info .view-all-btn .view-all-btn-inner-div:hover {
+  transform: translateY(-30%) scale(1.1);
+  z-index: 3;
+  position: relative;
+}
+
+.show .all-movies {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 10px;
+}
+.show .all-movies .more-div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: gray;
+}
+
+.show .all-movies .more-div .more-inner-div {
+  background-color: black;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+.show .all-movies .more-div .more-inner-div:hover {
+  transform: scale(1.3) translateY(-30%);
+}
+.show .all-movies .more-div .more {
+  font-size: 28px;
+}
+
+@media (max-width: 768px) {
+  .show {
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    border: solid 2px gray;
+  }
+  .show::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.565);
+  }
+  .show h1 {
+    z-index: 1;
+    position: relative;
+    text-shadow: 1px 2px black;
+    text-transform: uppercase;
+  }
+}

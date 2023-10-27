@@ -1,0 +1,35 @@
+.header {
+  height: 8vh;
+  background-color: black;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: inherit;
+}
+.header img {
+  width: 45px;
+  cursor: pointer;
+}
+.header .header-btn {
+  width: 100px;
+  height: 35px;
+  background-color: #007aff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 20px;
+}

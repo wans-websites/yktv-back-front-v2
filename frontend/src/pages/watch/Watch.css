@@ -1,0 +1,14 @@
+.watch {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.watch .video-container {
+  min-height: 60vh;
+  width: 80vw;
+  transition: 0.5s;
+}

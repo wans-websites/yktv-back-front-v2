@@ -1,0 +1,103 @@
+.signup {
+  height: 82vh;
+}
+.signup .container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.signup .container h3 {
+  text-align: center;
+  font-size: 28px;
+}
+.signup .container .google-btn {
+  width: 35vh;
+  height: 40px;
+  border: solid 1px #727272;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+}
+.signup .container .content {
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.signup .container .content form {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.signup .container .content form input {
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  background-color: #000;
+  color: #f3f3f3;
+  border-radius: 10px;
+}
+.signup .container .content form .email-div input {
+  height: 20px;
+  width: 30vw;
+  border-radius: 5px;
+  border: solid 1px #727272;
+}
+.signup .container .content form .password-div .password-div-input {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: #000;
+  border: solid 1px #727272;
+  border-radius: 5px;
+}
+.signup .container .content form .password-div .password-div-input input {
+  margin-top: 0;
+  width: 80%;
+}
+.signup .container .content form .password-div .password-div-input .show-pass {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.signup .container .content form .submit-btn {
+  width: 20vw;
+  height: 40px;
+  background-color: #007aff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-left: 0vw;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .signup .container .content form .password-div .password-div-input {
+    width: 50vw;
+  }
+  .signup .container .content form .email-div input {
+    width: 50vw;
+  }
+}
+@media (max-width: 468px) {
+  .signup .google-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .signup .container .content form .password-div .password-div-input {
+    width: 70vw;
+  }
+  .signup .container .content form .email-div input {
+    width: 70vw;
+  }
+}

@@ -1,0 +1,25 @@
+.birth-date-picker {
+  width: 400px;
+}
+.birth-date-picker .date-inputs {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+}
+.birth-date-picker > p {
+  font-weight: 700;
+  margin: 0;
+}
+
+.birth-date-picker label {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+@media (max-width: 372px) {
+  .birth-date-picker {
+    width: 300px;
+  }
+}
