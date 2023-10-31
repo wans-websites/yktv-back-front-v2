@@ -1,0 +1,121 @@
+Folder PATH listing
+Volume serial number is 9CE8-D624
+C:.
+|   .DS_Store
+|   App.css
+|   App.js
+|   data.js
+|   index.css
+|   index.js
+|   Tree.doc
+|   
++---assets
+|   \---img
+|           adulting.png
+|           bodaboda.png
+|           brush2.png
+|           brush3.png
+|           caught.png
+|           cheapest.png
+|           dearGirl.png
+|           eastmeet.png
+|           femaleonly.png
+|           ford.png
+|           fwb.png
+|           girlcode.png
+|           iknow.png
+|           img1.jpg
+|           inside.png
+|           lgbtq.png
+|           loresho.png
+|           love.png
+|           mazda.png
+|           mendont.png
+|           Mercedes.png
+|           misfits.png
+|           mistif.png
+|           modern.png
+|           normalize.png
+|           porche.png
+|           profile-dp.png
+|           sayno.png
+|           tillNairobi.png
+|           toyotafj.png
+|           turnoff.png
+|           waiyaki.png
+|           whatgirlsprefer.png
+|           yktv_logo.jpeg
+|           
++---components
+|       BirthDatePicker.css
+|       BirthDatePicker.js
+|       Footer.css
+|       Footer.js
+|       Header.css
+|       Header.js
+|       MainHeader.css
+|       MainHeader.js
+|       MovieCard.css
+|       MovieCard.js
+|       Show.css
+|       Show.js
+|       ShowGallery.css
+|       ShowGallery.js
+|       
++---pages
+|   |   ShowsPage.css
+|   |   ShowsPage.js
+|   |   
+|   +---allshowsmovies
+|   |       AllShowMovies.css
+|   |       AllShowMovies.js
+|   |       
+|   +---categories
+|   |       Categories.css
+|   |       Categories.js
+|   |       
+|   +---home
+|   |       Home.css
+|   |       Home.js
+|   |       
+|   +---profile
+|   |       Profile.css
+|   |       Profile.js
+|   |       
+|   +---registration
+|   |   +---login
+|   |   |       Login.css
+|   |   |       Login.js
+|   |   |       
+|   |   \---signup
+|   |           Signup.css
+|   |           Signup.js
+|   |           
+|   \---watch
+|           Watch.css
+|           Watch.js
+|           
++---redux
+|   +---app
+|   |       store.js
+|   |       
+|   \---features
+|           userSlice.js
+|           
++---routes
+|       ApiRoutes.js
+|       AppRoutes.js
+|       
+\---sections
+        Chat.css
+        Chat.js
+        Comment.css
+        Comment.js
+        Hero.css
+        Hero.js
+        HomeHero.css
+        HomeHero.js
+        ShowHero.js
+        Shows.css
+        Shows.js
+        

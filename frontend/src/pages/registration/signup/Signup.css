@@ -1,8 +1,9 @@
 .signup {
-  height: 82vh;
+  height: auto;
+  padding-bottom: 50px;
 }
 .signup .container {
-  width: 100vw;
+  width: auto;
   display: flex;
   justify-content: center;
 }
@@ -19,6 +20,7 @@
   justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
+  margin: 10px;
 }
 .signup .container .content {
   /* height: 80vh; */
@@ -28,7 +30,7 @@
   align-items: center;
 }
 .signup .container .content form {
-  height: 55vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -43,7 +45,9 @@
   color: #f3f3f3;
   border-radius: 10px;
 }
-.signup .container .content form .email-div input {
+.signup .container .content form .email-div input,
+.signup .container .content form .username-div input,
+.signup .container .content form .phone_number-div input {
   height: 20px;
   width: 30vw;
   border-radius: 5px;
@@ -74,12 +78,19 @@
   width: 20vw;
   height: 40px;
   background-color: #007aff;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  margin-left: 0vw;
   cursor: pointer;
+  margin: 10px;
+}
+.signup .container .content .link {
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
 }
 @media (max-width: 768px) {
   .signup .container .content form .password-div .password-div-input {

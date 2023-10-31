@@ -1,11 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Login.css";
 import GoogleIcon from "@mui/icons-material/Google";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { getDocs } from "firebase/firestore";
+import { app, db } from "../../../index.js";
+import { collection, query, where } from "firebase/firestore";
 
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { Link, useNavigate } from "react-router-dom";
-import { nodeInstance } from "../../../routes/ApiRoutes";
+// import { nodeInstance } from "../../../routes/ApiRoutes";
 import { login } from "../../../redux/features/userSlice";
 import { useDispatch } from "react-redux";
 
@@ -13,6 +17,7 @@ export default function Login() {
   const loginBtnRef = useRef();
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const auth = getAuth(app);
 
   const [isShowPassword, setIsShowPassword] = useState(false);
   const [email, setEmail] = useState("");
@@ -25,26 +30,50 @@ export default function Login() {
       loginBtnRef.current.style.marginLeft = "0vw";
     }
   }, []);
+  // const handleOnMouseEnter = () => {
+  //   if (email.length < 1 || password.length < 1) {
+  //     if (loginBtnRef.current.style.marginLeft === "0vw") {
+  //       loginBtnRef.current.style.marginLeft = "-30vw";
+  //     } else if (loginBtnRef.current.style.marginLeft === "-30vw") {
+  //       loginBtnRef.current.style.marginLeft = "30vw";
+  //     } else if (loginBtnRef.current.style.marginLeft === "30vw") {
+  //       loginBtnRef.current.style.marginLeft = "-30vw";
+  //     }
+  //   }
+  // };
   const handleOnMouseEnter = () => {
     if (email.length < 1 || password.length < 1) {
-      if (loginBtnRef.current.style.marginLeft === "0vw") {
-        loginBtnRef.current.style.marginLeft = "-30vw";
-      } else if (loginBtnRef.current.style.marginLeft === "-30vw") {
-        loginBtnRef.current.style.marginLeft = "30vw";
-      } else if (loginBtnRef.current.style.marginLeft === "30vw") {
-        loginBtnRef.current.style.marginLeft = "-30vw";
-      }
+      loginBtnRef.current.disabled = true;
+    } else {
+      loginBtnRef.current.disabled = false;
     }
   };
+
+  async function getDocuments(q) {
+    try {
+      const querySnapshot = await getDocs(q);
+      let data = {};
+      querySnapshot.forEach((doc) => {
+        // doc.data() is never undefined for query doc snapshots
+        console.log(doc.id, " => ", doc.data());
+        data = doc.data();
+        console.log(data);
+      });
+      return data;
+    } catch (e) {
+      console.error("Error getting documents: ", e);
+    }
+  }
 
   const handleOnSubmit = async (e) => {
     setIsLogingIn(true);
     e.preventDefault();
 
     if (email.length < 1 || password.length < 1) {
-      alert("Fill Everything");
+      alert("Please fill in Password");
       setIsLogingIn(false);
     } else {
+      // eslint-disable-next-line
       let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w\w+)+$/;
       if (!reg.test(email)) {
         alert("Enter a valid email");
@@ -54,29 +83,37 @@ export default function Login() {
           alert("That can't be anyone's password");
           setIsLogingIn(false);
         } else {
-          const data = {
-            email: email.split(" ").join("").toLocaleLowerCase(),
-            password: password,
-          };
-          try {
-            const response = await nodeInstance.post("/login", data, {
-              headers: { "Content-Type": "application/json" },
+          // const data = {
+          //   email: email.split(" ").join("").toLocaleLowerCase(),
+          //   password: password,
+          // };
+          signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              // Signed in
+              const user = userCredential.user;
+              const usersRef = collection(db, "users");
+              const q = query(usersRef, where("uid", "==", user.uid));
+              getDocuments(q).then((data) => {
+                console.log(data);
+                dispatch(
+                  login({
+                    uid: data.uid,
+                    username: data.username,
+                    email: data.email,
+                    dob: data.birthDate,
+                    password: data.password,
+                    phoneNumber: data.phoneNumber,
+                    dateJoined: data.dateJoined,
+                  })
+                );
+                navigate("/");
+              });
+            })
+            .catch((error) => {
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              console.error(errorCode, errorMessage);
             });
-            if (response.status === 200) {
-              dispatch(
-                login({
-                  email: response.data.user.email,
-                  birthDate: response.data.user.birthDate,
-                  dateJoined: response.data.user.dateJoined,
-                })
-              );
-              navigate("/");
-            }
-          } catch (error) {
-            console.error("Error:", error);
-            alert("An error occurred while logging in");
-            setIsLogingIn(false);
-          }
         }
       }
     }
