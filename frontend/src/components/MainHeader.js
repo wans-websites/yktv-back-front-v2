@@ -87,7 +87,7 @@ export default function MainHeader({ searchInputText, setSearchInputText }) {
               <Link
                 onClick={() => setIsMobileNavActive(false)}
                 to={"/signup"}
-                className="signup link"
+                className="link nav-item"
               >
                 Signup
               </Link>

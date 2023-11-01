@@ -38,10 +38,10 @@ export default function Profile() {
   const handleLogout = () => {
     setIsModal(true);
   };
-  console.log("User:", user);
-  if (user) {
-    console.log("User email:", user.email);
-  }
+  // console.log("User:", user);
+  //   if (user) {
+  //     console.log("User email:", user.email);
+  //   }
   return (
     <>
       <div className="profile">
