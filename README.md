@@ -1,1 +1,6 @@
-# yktv-back-front-v2
+# BACKEND
+
+1. logics
+   Trending
+   Popular
+   Binge
