@@ -1,6 +1,6 @@
 .movie-card {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 320px;
+  max-width: 320px;
   height: auto;
   margin: 15px;
   cursor: pointer;
@@ -10,7 +10,7 @@
   background-color: #181818;
 }
 .movie-card:hover {
-  transform: scale(1.1) translateY(5%);
+  transform: scale(1.035) translateY(5%);
   min-width: 350px;
   max-width: 350px;
   position: relative;
@@ -20,12 +20,12 @@
   border-radius: 10px;
 }
 .movie-card .first-card:hover {
-  transform: scale(1.1) translateX(10%) translateY(-10%);
+  transform: scale(1.035) translateX(10%) translateY(-10%);
   position: relative;
   z-index: 20;
 }
 .movie-card .last-card:hover {
-  transform: scale(1.1) translateX(-13%) translateY(-10%);
+  transform: scale(1.035) translateX(-13%) translateY(-10%);
   position: relative;
   z-index: 20;
 }

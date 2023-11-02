@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js upgrade
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add vercelyarn global add vercel
 
 PATH: 
   C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\PuTTY\;C:\msys64\mingw64\bin;C:\Users\Pascal\apache-maven-3.9.1-bin\apache-maven-3.9.1\bin;C:\Program Files\Java\jdk-20;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Users\Pascal\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Pascal\AppData\Local\Programs\Python\Python311\;C:\Users\Pascal\AppData\Local\Microsoft\WindowsApps;C:\Users\Pascal\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Pascal\AppData\Roaming\Composer\vendor\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1\bin;;C:\Program Files\Java\jdk-20\bin;C:\Users\Pascal\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Pascal\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Program Files\JetBrains\PhpStorm 2023.2.2\bin;;C:\Program Files\JetBrains\WebStorm 2023.2.3\bin;
@@ -14,16 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.14.16.tgz: ESOCKETTIMEDOUT
-      at ClientRequest.<anonymous> (C:\Users\Pascal\AppData\Roaming\nvm\v18.17.1\node_modules\yarn\lib\cli.js:141517:19)
+  Error: https://registry.yarnpkg.com/vercelyarn: Not found
+      at params.callback [as _callback] (C:\Users\Pascal\AppData\Roaming\nvm\v18.17.1\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (C:\Users\Pascal\AppData\Roaming\nvm\v18.17.1\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (C:\Users\Pascal\AppData\Roaming\nvm\v18.17.1\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:514:28)
+      at IncomingMessage.<anonymous> (C:\Users\Pascal\AppData\Roaming\nvm\v18.17.1\node_modules\yarn\lib\cli.js:141784:12)
       at Object.onceWrapper (node:events:628:28)
-      at ClientRequest.emit (node:events:514:28)
-      at TLSSocket.emitRequestTimeout (node:_http_client:847:9)
-      at Object.onceWrapper (node:events:628:28)
-      at TLSSocket.emit (node:events:526:35)
-      at Socket._onTimeout (node:net:571:8)
-      at listOnTimeout (node:internal/timers:569:17)
-      at process.processTimers (node:internal/timers:512:7)
+      at IncomingMessage.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 
 npm manifest: 
   {
