@@ -11,17 +11,14 @@ export default function AllShowMovies() {
   return (
     <div className="all-show-movies">
       <Hero height={"30vh"} />
-      <div className="all-show-movies">
-        <Hero height={"30vh"} />
-        <div className="all-movies">
-          {allShowsMovies ? (
-            allShowsMovies.map((item, index) => (
-              <MovieCard show_details={item} key={index} />
-            ))
-          ) : (
-            <p>No shows or movies available.</p>
-          )}
-        </div>
+      <div className="all-movies">
+        {allShowsMovies ? (
+          allShowsMovies.map((item, index) => (
+            <MovieCard show_details={item} key={index} />
+          ))
+        ) : (
+          <p>No shows or movies available.</p>
+        )}
       </div>
     </div>
   );
