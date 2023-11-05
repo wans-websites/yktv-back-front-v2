@@ -6,13 +6,26 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
+// Firebase API Keys
+const env_path = require("path");
+require("dotenv").config({
+  path: env_path.resolve(__dirname, "../env/.env.local"),
+}); // Load .env file from ./env/.env.local
+
+const fbApiKey = process.env.FIREBASE_API_KEY;
+const fbAuthDomain = process.env.FIREBASE_AUTH_DOMAIN;
+const fbProjectId = process.env.FIREBASE_PROJECT_ID;
+const fbStorageBucket = process.env.FIREBASE_STORAGE_BUCKET;
+const fbMessagingSenderId = process.env.FIREBASE_MESSAGING_SENDER_ID;
+const fbAppId = process.env.FIREBASE_APP_ID;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyD4DmAcqnuvNqdVqrTbWdp5h2LMak6p_lY",
-  authDomain: "yktv-19589.firebaseapp.com",
-  projectId: "yktv-19589",
-  storageBucket: "yktv-19589.appspot.com",
-  messagingSenderId: "154214458772",
-  appId: "1:154214458772:web:6a8262431fdacf81561b81",
+  apiKey: fbApiKey,
+  authDomain: fbAuthDomain,
+  projectId: fbProjectId,
+  storageBucket: fbStorageBucket,
+  messagingSenderId: fbMessagingSenderId,
+  appId: fbAppId,
 };
 
 export const app = initializeApp(firebaseConfig);
