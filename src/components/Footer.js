@@ -39,14 +39,20 @@ export default function Footer() {
         <div className="social-platforms">
           Follow us on
           <div>
-            <a href="https://www.tiktok.com/@yktvonline">
-              <PiTiktokLogoBold size={18} style={{ color: "blue" }} />
+            <a href="https://www.tiktok.com/@yktvonline" className="youtube">
+              <PiTiktokLogoBold size={20} style={{ color: "#007aff" }} />
             </a>
-            <a href="https://facebook.com/YKTVOnline/">
-              <PiFacebookLogoBold size={18} style={{ color: "blue" }} />
+            <a href="https://facebook.com/YKTVOnline/" className="fb">
+              <PiFacebookLogoBold
+                size={20}
+                style={{ color: "#007aff", margin: "0 40 0 40" }}
+              />
             </a>
-            <a href="https://www.instagram.com/yktvonline/">
-              <PiInstagramLogoBold size={18} style={{ color: "blue" }} />
+            <a
+              href="https://www.instagram.com/yktvonline/"
+              className="instagram"
+            >
+              <PiInstagramLogoBold size={20} style={{ color: "#007aff" }} />
             </a>
           </div>
         </div>
