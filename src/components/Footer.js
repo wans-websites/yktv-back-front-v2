@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/img/yktv_logo.jpeg";
 import "./Footer.css";
-import YouTubeIcon from "@mui/icons-material/YouTube";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
+// import YouTubeIcon from "@mui/icons-material/YouTube";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import FacebookIcon from "@mui/icons-material/Facebook";
+import {
+  PiTiktokLogoBold,
+  PiFacebookLogoBold,
+  PiInstagramLogoBold,
+} from "react-icons/pi";
 
 export default function Footer() {
   const [isMobileScreen, setIsMobileScreen] = useState(false);
@@ -33,14 +38,16 @@ export default function Footer() {
       {!isMobileScreen && (
         <div className="social-platforms">
           Follow us on
-          <div className="youtube">
-            <YouTubeIcon />
-          </div>
-          <div className="fb">
-            <FacebookIcon />
-          </div>
-          <div className="instagram">
-            <InstagramIcon />
+          <div>
+            <a href="https://www.tiktok.com/@yktvonline">
+              <PiTiktokLogoBold size={18} style={{ color: "blue" }} />
+            </a>
+            <a href="https://facebook.com/YKTVOnline/">
+              <PiFacebookLogoBold size={18} style={{ color: "blue" }} />
+            </a>
+            <a href="https://www.instagram.com/yktvonline/">
+              <PiInstagramLogoBold size={18} style={{ color: "blue" }} />
+            </a>
           </div>
         </div>
       )}

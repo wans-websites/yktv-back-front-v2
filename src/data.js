@@ -152,7 +152,7 @@ export const SHOWS = [
         movie:
           "https://drive.google.com/file/d/1fCX71ttND94ev0U-1gaDhds1GzvUG1F4/preview",
         trailor: "",
-        category: "lifestyl",
+        category: "lifestyle",
         synopsis: "",
         year: "2023",
         duration: "1:05:09",
