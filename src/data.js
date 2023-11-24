@@ -150,7 +150,7 @@ export const SHOWS = [
         description:
           "Get ready for round two of adulting adventures with Amy, Abigael, and Michelle! In this hilarious and insightful episode, these three ladies spill the beans on even more life lessons they've learned along the way, along with some little secrets women have that men might not know about! From navigating relationships to handling responsibilities, this episode is packed with laughter and wisdom that will leave you nodding in agreement. Don't forget to hit that like, share, and comment button to let us know what videos you want to see next. So sit back, relax, and get ready to enjoy another epic instalment of adulting with a twist!",
         movie:
-          "https://drive.google.com/file/d/1fCX71ttND94ev0U-1gaDhds1GzvUG1F4/view?usp=sharing",
+          "https://drive.google.com/file/d/1fCX71ttND94ev0U-1gaDhds1GzvUG1F4/preview",
         trailor: "",
         category: "lifestyl",
         synopsis: "",
@@ -167,7 +167,7 @@ export const SHOWS = [
         description:
           "Today on Lock & Key, Amy and Diana host Sam Ndeze as they talk about the different Types and turnoffs in relationships including hygiene, body types and personalities.          .",
         movie:
-          "https://drive.google.com/file/d/1qGejuRMsfVlH8YpDmUJSDr1tbeUCZnJu/view?usp=sharing",
+          "https://drive.google.com/file/d/1qGejuRMsfVlH8YpDmUJSDr1tbeUCZnJu/preview",
         trailor: "",
         category: "lifestyl",
         synopsis: "",
@@ -184,7 +184,7 @@ export const SHOWS = [
         description:
           "Today on Lock & Key, Amy and Diana host Makori to talk about Deal Breakers in relationships, Appearance, occupation and personality and why they matter when choosing a partner to date.",
         movie:
-          "https://drive.google.com/file/d/1T4QOYHl3wssBfBW8D_SiHo_n5HUvHnwU/view?usp=sharing",
+          "https://drive.google.com/file/d/1T4QOYHl3wssBfBW8D_SiHo_n5HUvHnwU/preview",
         trailor: "",
         category: "lifestyl",
         synopsis: "",
@@ -201,7 +201,7 @@ export const SHOWS = [
         description:
           "Unlock your mind and unleash your laughter. Today on Lock & Key, Amy is joined by two remarkable guests, Abigael and Michelle, for an exciting discussion on the challenges and triumphs of adulting as women. In this special episode, you'll hear some of the stories of personal growth and resilience that will make you reflect and connect with these incredible women. With thought-provoking insights and humorous anecdotes, this episode promises to be a treat for your mind and soul. And, if you love what you hear, don't forget to Subscribe, share, and comment on your favorite parts.",
         movie:
-          "https://drive.google.com/file/d/1dm6EeFSOAjSq73XXooO4L6zfd7l6Ke5p/view?usp=sharing",
+          "https://drive.google.com/file/d/1dm6EeFSOAjSq73XXooO4L6zfd7l6Ke5p/preview",
         trailor: "",
         category: "lifestyl",
         synopsis: "",
@@ -223,7 +223,7 @@ export const SHOWS = [
         title: "A MISFITS TALE",
         description: "This is a short film based on a true story.",
         movie:
-          "https://drive.google.com/file/d/15LZZi8tgNmmppWvI-HPEb31VHwVfj1ng/view?usp=sharing",
+          "https://drive.google.com/file/d/15LZZi8tgNmmppWvI-HPEb31VHwVfj1ng/preview",
         trailor: "",
         category: "Real Estate",
         synopsis: "",
@@ -245,7 +245,7 @@ export const SHOWS = [
         title: "Brush Strokes EP 2 Completed",
         description: "",
         movie:
-          "https://drive.google.com/file/d/1GulUzcGtFop2KUk6P7V692t2uqs6T88r/view?usp=sharing",
+          "https://drive.google.com/file/d/1GulUzcGtFop2KUk6P7V692t2uqs6T88r/preview",
         trailor: "",
         category: "Real Estate",
         synopsis: "",
@@ -261,7 +261,7 @@ export const SHOWS = [
         title: "Brush Strokes Ep 3 Completed",
         description: "",
         movie:
-          "https://drive.google.com/file/d/1yhInBNwZkL189Vegt0adBpMFFL3W-j0R/view?usp=sharing",
+          "https://drive.google.com/file/d/1yhInBNwZkL189Vegt0adBpMFFL3W-j0R/preview",
         trailor: "",
         category: "Real Estate",
         synopsis: "",
@@ -319,7 +319,7 @@ export const SHOWS = [
         description:
           "Today on Cribz 254, Eglah Wandurwa tours a Beautiful three bedroom luxury apartment located in Kileleshwa Nairobi.",
         movie:
-          "https://drive.google.com/file/d/1OacHkcuGW6jg9Kg0B6W6weCO9Yalp2G4/view?usp=sharing",
+          "https://drive.google.com/file/d/1OacHkcuGW6jg9Kg0B6W6weCO9Yalp2G4/preview",
         trailor: "",
         category: "Real Estate",
         synopsis: "",
@@ -336,7 +336,7 @@ export const SHOWS = [
         description:
           "Today on Cribz 254,  Eglah Wandurwa takes a look inside the new Waiyaki Way Apartments as she reviews the features, facilities and space.           ",
         movie:
-          "https://drive.google.com/file/d/1ItG2bU2BF2OTHVIyrypMl_SQ9x4STSgW/view?usp=sharing",
+          "https://drive.google.com/file/d/1ItG2bU2BF2OTHVIyrypMl_SQ9x4STSgW/preview",
         trailor: "",
         category: "Real Estate",
         synopsis: "",
@@ -353,7 +353,7 @@ export const SHOWS = [
         description:
           "Today on Cribz 254,  Eglah Wandurwa tours a Four Bedroom Townhouse located in Loresho as she reviews the space and facilities.           ",
         movie:
-          "https://drive.google.com/file/d/15S2ShowyjQOgUj2XAku-_hBh66oqL1Kk/view?usp=sharing",
+          "https://drive.google.com/file/d/15S2ShowyjQOgUj2XAku-_hBh66oqL1Kk/preview",
         trailor: "",
         category: "Real Estate",
         synopsis: "",
@@ -370,7 +370,7 @@ export const SHOWS = [
         description:
           "Today on Cribz 254, we feature a beautiful three bedroom family home in Kileleshwa. The cheapest in the area.",
         movie:
-          "https://drive.google.com/file/d/1aoqkPkehZcsVWOTO9n8Y_dJ3W0O-qeTs/view?usp=sharing",
+          "https://drive.google.com/file/d/1aoqkPkehZcsVWOTO9n8Y_dJ3W0O-qeTs/preview",
         trailor: "",
         category: "Real Estate",
         synopsis: "",
@@ -393,7 +393,7 @@ export const SHOWS = [
         description:
           "Attention all adrenaline junkies and off-road enthusiasts! In this thrilling episode of Auto Flex, Albert and Shunet unveil the unrivaled power and rugged charm of the iconic 2011 Toyota FJ Cruiser! Join them as they showcase the FJ Cruiser's muscular design, impressive off-road capabilities, and fearless spirit. With its commanding presence and cutting-edge off-road technologies, this powerhouse is ready to dominate any challenge. Buckle up and join Albert and Shunet as they ignite your wanderlust and unleash the true essence of adventure! ",
         movie:
-          "https://drive.google.com/file/d/1aoqkPkehZcsVWOTO9n8Y_dJ3W0O-qeTs/view?usp=sharing",
+          "https://drive.google.com/file/d/1aoqkPkehZcsVWOTO9n8Y_dJ3W0O-qeTs/preview",
         trailor: "",
         category: "Comedy, Lifestyle",
         synopsis: "",
@@ -410,7 +410,7 @@ export const SHOWS = [
         description:
           "Satisfy your excitement with this beautiful Mercedes as Albert delves into the breathtaking world of the AMG GLE43. In a comprehensive review and pulse-pounding test drive that captures the essence of power and luxury. Fuel your automotive passion and join us on this epic episode! Like, Share and Subscribe for More.",
         movie:
-          "https://drive.google.com/file/d/1dSYAshqR2yZR1lpAz64DwgFHNhUfsjNK/view?usp=sharing",
+          "https://drive.google.com/file/d/1dSYAshqR2yZR1lpAz64DwgFHNhUfsjNK/preview",
         trailor: "",
         category: "Comedy, Lifestyle",
         synopsis: "",
@@ -427,7 +427,7 @@ export const SHOWS = [
         description:
           "Welcome to an exciting journey into the world of automotive excellence with your host, Albert! In this captivating video, we delve deep into the remarkable features and unparalleled performance of the Mazda CX-5 2018 model. If you're a car enthusiast or someone in search of a versatile and stylish SUV, you're in for a treat!",
         movie:
-          "https://drive.google.com/file/d/1vsBPYR6tlNbMQoQaQ5sdeoWH0wGL3Vzp/view?usp=sharing",
+          "https://drive.google.com/file/d/1vsBPYR6tlNbMQoQaQ5sdeoWH0wGL3Vzp/preview",
         trailor: "",
         category: "Comedy, Lifestyle",
         synopsis: "",
@@ -444,7 +444,7 @@ export const SHOWS = [
         description:
           "Are you a Porshe enthusiast? Enjoy this in depth review of the Porsche Cayenne 2016 on this Episode of Auto Flex, as Shunet and Albert compare and view the body and interior of the lovely machine. Subscribe for this and more car reviews weekly.",
         movie:
-          "https://drive.google.com/file/d/1f8f7o8pdHF9F5eZ0YGNkqYFq7sWeNEGm/view?usp=sharing",
+          "https://drive.google.com/file/d/1f8f7o8pdHF9F5eZ0YGNkqYFq7sWeNEGm/preview",
         trailor: "",
         category: "Comedy, Lifestyle",
         synopsis: "",
@@ -461,7 +461,7 @@ export const SHOWS = [
         description:
           "Get ready to hit the road with Auto Flex! In our premiere episode, Shunet takes the Ford Ranger Wildtrack for a spin, putting its off-road capabilities and sleek design to the test. Join in the analysis of this pickup truck that's perfect for any adventure.",
         movie:
-          "https://drive.google.com/file/d/1nNTzXft8E5Q2JhdPBa7E4FJbUCQRaf8G/view?usp=sharing",
+          "https://drive.google.com/file/d/1nNTzXft8E5Q2JhdPBa7E4FJbUCQRaf8G/preview",
         trailor: "",
         category: "Comedy, Lifestyle",
         synopsis: "",
@@ -519,7 +519,7 @@ export const SHOWS = [
         description:
           "In today’s video I host Stephanie Wanjiku as we talk about What Girls Prefer and how to get the girl you want.",
         movie:
-          "https://drive.google.com/file/d/10BZAtDtmFY7HLCqz0jOtEpJoxrrtSflf/view?usp=sharing",
+          "https://drive.google.com/file/d/10BZAtDtmFY7HLCqz0jOtEpJoxrrtSflf/preview",
         trailor: "",
         category: "Talk Show, Lifestyle",
         synopsis: "",
@@ -537,7 +537,7 @@ export const SHOWS = [
         description:
           "In today's video I host Tracy Wathira, Kyle Kiragu and Sarah Seran, as they tell me how they differentiate between their friends and their friends with benefits, as the conversations takes funny unexpected turns when Tracy describes specifically what she looks for and what she likes and as Kyle and I share our experiences with desperate girl in situationships.          ",
         movie:
-          "https://drive.google.com/file/d/1jLUvo1_NaXG1nc6_rGTVEwcMlfzzguSk/view?usp=sharing",
+          "https://drive.google.com/file/d/1jLUvo1_NaXG1nc6_rGTVEwcMlfzzguSk/preview",
         trailor: "",
         category: "Talk Show, Lifestyle",
         synopsis: "",
@@ -554,7 +554,7 @@ export const SHOWS = [
         description:
           "In today's Episode, Raph sits down with Jade and Humprey as they talk about their relationship, handling the haters, relationship struggles and Humprey's twitter wars.",
         movie:
-          "https://drive.google.com/file/d/10pomhFP9pU3XwVOhumvTwu3AIQH-QNtL/view?usp=sharing",
+          "https://drive.google.com/file/d/10pomhFP9pU3XwVOhumvTwu3AIQH-QNtL/preview",
         trailor: "",
         category: "Talk Show, Lifestyle",
         synopsis: "",
@@ -570,7 +570,7 @@ export const SHOWS = [
         title: "CITY BOY, IDA & IVY ON SEX EDUCATION",
         description: `In today's video I host Ida, Ian and Ivy, as we talk about Sex and Connections, Sex Education and as Ian shares his childhood stories plus how his relationship failed after being "caught in the act". There is more too on the topic of cheating and relationships and how I and my guests hack the tough situations.`,
         movie:
-          "https://drive.google.com/file/d/1GWEew92AZpFc9SVLeeWMp18-iB78vM3n/view?usp=sharing",
+          "https://drive.google.com/file/d/1GWEew92AZpFc9SVLeeWMp18-iB78vM3n/preview",
         trailor: "",
         category: "Talk Show, Lifestyle",
         synopsis: "",
@@ -587,7 +587,7 @@ export const SHOWS = [
         description:
           "In today's video I host Cindy Kipsang, the owner of the (I Know Who You Are) Instagram page that got teenagers all over Nairobi excited after she pranked most into thinking she had information about them. An idea that has caused me to call it the biggest prank on Kenyan teenagers because of the huge following she got after the stunt, as well as comments from those who felt scammed and lied to after the prank. She talks about it all, from how the idea came up to why she did it as well as what the future holds for her and her page and her journey as a content creator on youtube using animation as a method of expression.          ",
         movie:
-          "https://drive.google.com/file/d/1SQ6p6NK8utLn7G0LqnniHAdRYXNaJreJ/view?usp=sharing",
+          "https://drive.google.com/file/d/1SQ6p6NK8utLn7G0LqnniHAdRYXNaJreJ/preview",
         trailor: "",
         category: "Talk Show, Lifestyle",
         synopsis: "",
